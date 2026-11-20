@@ -1,6 +1,6 @@
 # Presentación — CEA GROUP
 
-Repositorio privado con la presentación HTML del proyecto de asesoría académica de CEA GROUP.
+Repositorio público con la presentación HTML del proyecto de asesoría académica de CEA GROUP.
 
 ## Ver la presentación
 
