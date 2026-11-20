@@ -1,0 +1,29 @@
+# Credenciales
+.env
+.env.*
+!.env.example
+local.properties
+*token*.ps1
+
+# Dependencias y generados
+node_modules/
+build/
+dist/
+out/
+__pycache__/
+.pytest_cache/
+.gradle/
+.wrangler/
+.venv/
+venv/
+.next/
+.turbo/
+
+# Sistemas y editores
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Git anidado
+.git
