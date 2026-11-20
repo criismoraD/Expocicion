@@ -46,10 +46,11 @@ test('production presentation index.html satisfies all structural and media rule
     'https://admin.grupoceaperu.com/',
     'https://portal.grupoceaperu.com/',
     'https://grupoceaperu.com/',
-    'https://cea-crm-backend-914895036295.southamerica-east1.run.app/docs',
   ]) {
     assert.ok(html.includes(url), `Expected live production link: ${url}`);
   }
+  assert.ok(!html.includes('Plan B') && !html.includes('/docs'), 'Expected Plan B buttons and Swagger card to be removed from Demo slide');
+  assert.ok(html.includes('Daily Scrum') && html.includes('Metodología Scrum'), 'Expected Scrum development methodology slide');
   assert.ok(html.includes('AGENTS.md') && html.includes('VERSION_BACKOFFICE'), 'Expected AGENTS.md governance slide with unified VX.YY versioning');
   assert.ok(html.includes('OpenCode') && html.includes('Antigravity'), 'Expected AI agents OpenCode and Antigravity');
   assert.ok(html.includes('Google Meet') && html.includes('ficheros físicos'), 'Expected manual operation and physical contract files diagnosis');
@@ -57,18 +58,24 @@ test('production presentation index.html satisfies all structural and media rule
   assert.ok(
     html.includes('assets/evidencia-agenda-cea.jpg') &&
       html.includes('assets/evidencia-contratos-mano.jpg') &&
+      html.includes('assets/evidencia-notas-mano.jpg') &&
       html.includes('assets/evidencia-ficheros-cea.jpg'),
-    'Expected real office evidence photos on Slides 06 and 07'
+    'Expected real office evidence photos on Slides 06, 07 and 08'
   );
   assert.ok(!/ferreter|miniapp|05-miniapp/i.test(html), 'Expected zero references to ferreteria or miniapp in index.html');
   assert.ok(html.includes('beforeprint') && html.includes('cea-deck-key'), 'Expected PDF beforeprint preload and iframe keyboard forwarding');
-  assert.ok(
-    html.includes('assets/backoffice.png') && html.includes('assets/portal.png') && html.includes('assets/sitio-web.png'),
-    'Expected Plan B offline backup captures on Demo slide'
-  );
   for (const diag of EXPECTED_DIAGRAMS) {
     const diagHtml = fs.readFileSync(path.join(deckDir, diag), 'utf8');
     assert.ok(!/ferreter|miniapp|05-miniapp/i.test(diagHtml), `Expected zero references to ferreteria or miniapp in ${diag}`);
     assert.ok(diagHtml.includes('cea-deck-key'), `Expected iframe keyboard forwarding script in ${diag}`);
   }
+  const backofficeDiag = fs.readFileSync(path.join(deckDir, 'diagramas/01-backoffice.html'), 'utf8');
+  assert.ok(
+    !backofficeDiag.includes('Visión de boletas') &&
+      !backofficeDiag.includes('Gemini / OpenAI') &&
+      !backofficeDiag.includes('id="node-ai"') &&
+      !backofficeDiag.includes('id="api-ai"') &&
+      backofficeDiag.includes('visión, texto, TTS y voz'),
+    'Expected unified Gemini node without separate Visión de boletas / OpenAI box'
+  );
 });

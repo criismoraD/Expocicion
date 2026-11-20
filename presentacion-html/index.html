@@ -304,19 +304,18 @@
     white-space:nowrap;font-family:var(--font-display);
   }
 
-  /* Diagram frame: full slide */
+  /* Diagram frame: maximized slide canvas */
   .diagram-frame{
     flex:1;min-height:0;width:100%;
     background:#f8fafc;border:1px solid var(--line);border-radius:12px;
     overflow:hidden;box-shadow:var(--shadow);display:flex;
   }
   .diagram-frame iframe{width:100%;height:100%;border:0;background:#f8fafc;display:block}
-  .slide.diagram-slide .slide-head{padding-top:15px;padding-bottom:9px}
-  .slide.diagram-slide .slide-head h2{font-size:27px}
-  .slide.diagram-slide .body{padding-top:11px}
-  .slide.diagram-slide .media-strip{padding:10px 16px}
-  .slide.diagram-slide .media-strip p{font-size:14.2px;line-height:1.4}
-  .slide.diagram-slide .media-meta{font-size:13.2px}
+  .slide.diagram-slide{padding:0 26px 40px}
+  .slide.diagram-slide .foot{left:26px;right:26px;bottom:10px}
+  .slide.diagram-slide .slide-head{margin-top:8px;padding-top:10px;padding-bottom:7px}
+  .slide.diagram-slide .slide-head h2{font-size:25px}
+  .slide.diagram-slide .body{padding-top:8px}
 
   /* Problem bar */
   .bar-track{height:6px;background:var(--surface-alt);border-radius:4px;overflow:hidden;margin-top:auto}
@@ -958,7 +957,7 @@
       <h2>Operación con controles manuales y sin presencia digital</h2>
       <p class="sub" style="font-size:15.5px">CEA GROUP contaba con manual operativo y puntos de control, pero toda la ejecución diaria se llevaba en papel y chats.</p>
     </div>
-    <div class="head-meta"><strong>§2.1</strong> Situación inicial</div>
+    <div class="head-meta"><strong>Situación</strong> inicial</div>
   </header>
   <div class="body" style="justify-content:space-between;gap:16px">
     <div class="diag-grid">
@@ -1066,7 +1065,42 @@
   <div class="foot"><span>Pregunta 1 · Evidencia directa del proceso manual en la oficina de CEA GROUP</span><span><b>06 / 28</b></span></div>
 </section>
 
-<!-- ==================== 07 P1 · EVIDENCIA: CONTROL DE CONTRATOS Y CUOTAS EN FICHEROS ==================== -->
+<!-- ==================== 07 P1 · EVIDENCIA: NOTAS ESCRITAS A MANO EN AGENDA ==================== -->
+<section class="slide" data-title="P1 · Evidencia: notas escritas a mano" data-section="01 · Pregunta 1: Problemática Actual">
+  <header class="slide-head">
+    <div class="head-copy">
+      <div class="kicker">Pregunta 1 <span class="sep">·</span> Evidencia directa en agenda física</div>
+      <h2>Notas escritas a mano: clientes, cuotas y entregas en agenda</h2>
+      <p class="sub" style="font-size:15.5px">Datos de clientes, DNIs, montos de pago, porcentajes de avance y simulacros se registraban a lapicero en papel.</p>
+    </div>
+    <div class="head-meta"><strong>ANTES</strong> Notas a mano</div>
+  </header>
+  <div class="body">
+    <div class="fichero-layout">
+      <div class="shot bleed" style="background:#f1f5f9" data-lightbox="assets/evidencia-notas-mano.jpg" data-caption="Agenda física abierta con notas escritas a mano en CEA GROUP: datos de clientes, DNI, montos de cuotas, porcentajes de avance y simulacros">
+        <img src="assets/evidencia-notas-mano.jpg" alt="Agenda física abierta con notas escritas a mano registrando clientes, DNI, montos, porcentajes y fechas de avance" style="object-position:50% 44%" referrerpolicy="no-referrer">
+        <span class="shot-zoom-hint">Clic para ampliar</span>
+      </div>
+
+      <div class="fichero-panel" style="border-top-color:var(--warn)">
+        <div class="diag-head">
+          <div class="ico warn"><svg viewBox="0 0 24 24"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg></div>
+          <h3>Seguimiento crítico a lapicero</h3>
+        </div>
+        <p class="diag-lead">Cada página concentraba <strong>datos comerciales, financieros y académicos</strong> sin estructura ni respaldo digital.</p>
+        <ul class="diag-points">
+          <li><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg><span><strong>Datos y DNI sin resguardo:</strong> nombres, grados académicos, DNI y fechas clave escritos en hojas sueltas o agendas abiertas.</span></li>
+          <li><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg><span><strong>Montos y avances mezclados:</strong> cuotas (<span class="mono">S/&nbsp;900</span>), adelantos (<span class="mono">50%</span>), porcentajes de tesis y simulacros entre tachaduras y círculos.</span></li>
+          <li><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg><span><strong>Imposible auditar o buscar rápido:</strong> retomar un expediente exigía descifrar apuntes pasados día por día.</span></li>
+        </ul>
+        <div class="diag-foot">Información sensible dispersa y sin trazabilidad</div>
+      </div>
+    </div>
+  </div>
+  <div class="foot"><span>Pregunta 1 · Evidencia real de notas escritas a mano en agenda física</span><span><b>07 / 28</b></span></div>
+</section>
+
+<!-- ==================== 08 P1 · EVIDENCIA: CONTROL DE CONTRATOS Y CUOTAS EN FICHEROS ==================== -->
 <section class="slide" data-title="P1 · Evidencia: ficheros físicos de contratos" data-section="01 · Pregunta 1: Problemática Actual">
   <header class="slide-head">
     <div class="head-copy">
@@ -1098,18 +1132,18 @@
       </div>
     </div>
   </div>
-  <div class="foot"><span>Pregunta 1 · Archivo físico real de contratos y boletas en CEA GROUP</span><span><b>07 / 28</b></span></div>
+  <div class="foot"><span>Pregunta 1 · Archivo físico real de contratos y boletas en CEA GROUP</span><span><b>08 / 28</b></span></div>
 </section>
 
-<!-- ==================== 08 P1 · SEIS PROBLEMAS CRÍTICOS + BRECHA DIGITAL ==================== -->
+<!-- ==================== 09 P1 · SEIS PROBLEMAS CRÍTICOS + BRECHA DIGITAL ==================== -->
 <section class="slide" data-title="P1 · Problemas críticos y brecha digital" data-section="01 · Pregunta 1: Problemática Actual">
   <header class="slide-head">
     <div class="head-copy">
       <div class="kicker">Pregunta 1 <span class="sep">·</span> Diagnóstico operativo y comercial</div>
       <h2>Seis problemas críticos y brecha de visibilidad en Google</h2>
-      <p class="sub" style="font-size:14.6px">Priorización cualitativa obtenida del diagnóstico en oficina y entrevistas a las áreas de CEA GROUP (§2.2).</p>
+      <p class="sub" style="font-size:14.6px">Priorización cualitativa obtenida del diagnóstico en oficina y entrevistas a las áreas de CEA GROUP.</p>
     </div>
-    <div class="head-meta"><strong>§2.2</strong> Hallazgos</div>
+    <div class="head-meta"><strong>6</strong> Hallazgos</div>
   </header>
   <div class="body" style="gap:15px">
     <div class="prob-grid">
@@ -1195,17 +1229,17 @@
       </div>
     </div>
   </div>
-  <div class="foot"><span>Pregunta 1 · Actividad Académica §2.2 Matriz cualitativa de hallazgos</span><span><b>08 / 28</b></span></div>
+  <div class="foot"><span>Pregunta 1 · Matriz cualitativa de hallazgos</span><span><b>09 / 28</b></span></div>
 </section>
 
-<!-- ==================== 09 P1 · CONSECUENCIAS Y PLANTEAMIENTO ==================== -->
+<!-- ==================== 10 P1 · CONSECUENCIAS Y PLANTEAMIENTO ==================== -->
 <section class="slide" data-title="P1 · Consecuencias y planteamiento" data-section="01 · Pregunta 1: Problemática Actual">
   <header class="slide-head">
     <div class="head-copy">
       <div class="kicker">Pregunta 1 <span class="sep">·</span> Impacto y síntesis del diagnóstico</div>
       <h2>Consecuencias operativas y planteamiento del problema</h2>
     </div>
-    <div class="head-meta"><strong>§2.3 – §2.4</strong></div>
+    <div class="head-meta"><strong>Impacto</strong> y alcance</div>
   </header>
   <div class="body" style="gap:16px">
     <div class="exec-grid c2">
@@ -1240,17 +1274,17 @@
       <p style="font-size:15.2px;color:var(--ink);line-height:1.48">La gestión comercial, académica y de cobranza del servicio de Asesoría Académica de <strong>CEA GROUP E.I.R.L.</strong> se realiza de forma manual y descentralizada (agendas físicas, contratos en ficheros y WhatsApp personal) y carece de presencia web y ficha en Google Maps, lo que origina pérdida de trazabilidad, distorsión de observaciones, descontrol de versiones, sobrecarga no monitoreada de asesores y deficiencias en el seguimiento de pagos.</p>
     </div>
   </div>
-  <div class="foot"><span>Pregunta 1 · Fin del diagnóstico de problemática actual (§2.3 – §2.4)</span><span><b>09 / 28</b></span></div>
+  <div class="foot"><span>Pregunta 1 · Fin del diagnóstico de problemática actual</span><span><b>10 / 28</b></span></div>
 </section>
 
-<!-- ==================== 10 P2 · TÍTULO OFICIAL ==================== -->
+<!-- ==================== 11 P2 · TÍTULO OFICIAL ==================== -->
 <section class="slide" data-title="P2 · Título oficial del proyecto" data-section="02 · Pregunta 2: Título del Proyecto">
   <header class="slide-head">
     <div class="head-copy">
       <div class="kicker">Pregunta 2 <span class="sep">·</span> ¿Cuál es el título de tu proyecto?</div>
       <h2>El título oficial del proyecto</h2>
     </div>
-    <div class="head-meta"><strong>§3.1</strong> Título</div>
+    <div class="head-meta"><strong>Título</strong> oficial</div>
   </header>
   <div class="body" style="gap:18px">
     <div class="title-showcase" style="flex:0 0 auto">
@@ -1293,17 +1327,17 @@
       </div>
     </div>
   </div>
-  <div class="foot"><span>Pregunta 2 · Actividad Académica §3.1 Título oficial</span><span><b>10 / 28</b></span></div>
+  <div class="foot"><span>Pregunta 2 · Título oficial del proyecto</span><span><b>11 / 28</b></span></div>
 </section>
 
-<!-- ==================== 11 P2 · ALCANCE DEL TÍTULO ==================== -->
+<!-- ==================== 12 P2 · ALCANCE DEL TÍTULO ==================== -->
 <section class="slide" data-title="P2 · Alcance del título" data-section="02 · Pregunta 2: Título del Proyecto">
   <header class="slide-head">
     <div class="head-copy">
       <div class="kicker">Pregunta 2 <span class="sep">·</span> Delimitación del proyecto</div>
       <h2>Alcance del título: cinco ejes y resultado esperado</h2>
     </div>
-    <div class="head-meta"><strong>§3.2</strong> Alcance</div>
+    <div class="head-meta"><strong>Alcance</strong> del proyecto</div>
   </header>
   <div class="body">
     <div class="exec-grid c3 r2">
@@ -1351,17 +1385,17 @@
       </div>
     </div>
   </div>
-  <div class="foot"><span>Pregunta 2 · Actividad Académica §3.2 Alcance del título</span><span><b>11 / 28</b></span></div>
+  <div class="foot"><span>Pregunta 2 · Alcance del título del proyecto</span><span><b>12 / 28</b></span></div>
 </section>
 
-<!-- ==================== 12 P2 · OBJETIVOS ==================== -->
+<!-- ==================== 13 P2 · OBJETIVOS ==================== -->
 <section class="slide" data-title="P2 · Objetivos del proyecto" data-section="02 · Pregunta 2: Título del Proyecto">
   <header class="slide-head">
     <div class="head-copy">
       <div class="kicker">Pregunta 2 <span class="sep">·</span> Propósito y metas verificables</div>
       <h2>Objetivo general y objetivos específicos</h2>
     </div>
-    <div class="head-meta"><strong>§3.3</strong> Objetivos</div>
+    <div class="head-meta"><strong>Objetivos</strong> del proyecto</div>
   </header>
   <div class="body" style="gap:16px">
     <div class="card tint accent-top" style="flex-direction:row;align-items:center;gap:18px;padding:19px 24px;flex:0 0 auto">
@@ -1397,10 +1431,10 @@
       </div>
     </div>
   </div>
-  <div class="foot"><span>Pregunta 2 · Actividad Académica §3.3 Objetivos del proyecto</span><span><b>12 / 28</b></span></div>
+  <div class="foot"><span>Pregunta 2 · Objetivo general y objetivos específicos</span><span><b>13 / 28</b></span></div>
 </section>
 
-<!-- ==================== 13 P3 · LEVANTAMIENTO Y MAPEO DEL FLUJO (7 ETAPAS) ==================== -->
+<!-- ==================== 14 P3 · LEVANTAMIENTO Y MAPEO DEL FLUJO (7 ETAPAS) ==================== -->
 <section class="slide" data-title="P3 · Mapeo del flujo en 7 etapas" data-section="03 · Pregunta 3: Justificación y Desarrollo">
   <header class="slide-head">
     <div class="head-copy">
@@ -1487,10 +1521,10 @@
       </div>
     </div>
   </div>
-  <div class="foot"><span>Pregunta 3 · Levantamiento con cronograma guía y entrevistas</span><span><b>13 / 28</b></span></div>
+  <div class="foot"><span>Pregunta 3 · Levantamiento con cronograma guía y entrevistas</span><span><b>14 / 28</b></span></div>
 </section>
 
-<!-- ==================== 14 P3 · JUSTIFICACIÓN OPERATIVA + CÓMO SE TRABAJA AHORA ==================== -->
+<!-- ==================== 15 P3 · JUSTIFICACIÓN OPERATIVA + CÓMO SE TRABAJA AHORA ==================== -->
 <section class="slide" data-title="P3 · Ruta del cliente y trabajo actual" data-section="03 · Pregunta 3: Justificación y Desarrollo">
   <header class="slide-head">
     <div class="head-copy">
@@ -1542,10 +1576,10 @@
       </div>
     </div>
   </div>
-  <div class="foot"><span>Pregunta 3 · §4.1 Justificación operativa · Transformación del proceso diario</span><span><b>14 / 28</b></span></div>
+  <div class="foot"><span>Pregunta 3 · Justificación operativa · Transformación del proceso diario</span><span><b>15 / 28</b></span></div>
 </section>
 
-<!-- ==================== 15 P3 · SITIO WEB, SEO Y FICHA EN GOOGLE MAPS ==================== -->
+<!-- ==================== 16 P3 · SITIO WEB, SEO Y FICHA EN GOOGLE MAPS ==================== -->
 <section class="slide" data-title="P3 · Web, SEO y Ficha en Google Maps" data-section="03 · Pregunta 3: Justificación y Desarrollo">
   <header class="slide-head">
     <div class="head-copy">
@@ -1586,7 +1620,7 @@
         <p style="font-size:14.4px;color:var(--muted);line-height:1.38">Convertimos un dominio sin uso en un canal medible de captación orgánica y confianza local:</p>
         <ul class="exec-list ok" style="gap:8px">
           <li style="padding:9px 12px;font-size:14.2px"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg><span><strong>Sitio web (<span class="mono">grupoceaperu.com</span>):</strong> Cloudflare Pages con 7 secciones, blog de noticias y libro de reclamaciones virtual.</span></li>
-          <li style="padding:9px 12px;font-size:14.2px"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg><span><strong>SEO técnico (RF-18.2):</strong> metadescripciones, URLs limpias, <span class="mono">sitemap.xml</span>, <span class="mono">robots.txt</span>, Schema y Search Console.</span></li>
+          <li style="padding:9px 12px;font-size:14.2px"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg><span><strong>SEO técnico:</strong> metadescripciones, URLs limpias, <span class="mono">sitemap.xml</span>, <span class="mono">robots.txt</span>, Schema y Search Console.</span></li>
           <li style="padding:9px 12px;font-size:14.2px"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg><span><strong>Ficha en Google Maps:</strong> perfil oficial verificado con foto exterior, horario, reseñas 5.0 y enlace al sitio web.</span></li>
           <li style="padding:9px 12px;font-size:14.2px"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg><span><strong>Integración al CRM:</strong> formularios web y accesos de WhatsApp ingresan leads automáticamente al embudo comercial.</span></li>
         </ul>
@@ -1596,17 +1630,17 @@
       </div>
     </div>
   </div>
-  <div class="foot"><span>Pregunta 3 · Captura real de Google Business Profile + Módulo 18 (SEO y Captación)</span><span><b>15 / 28</b></span></div>
+  <div class="foot"><span>Pregunta 3 · Captura real de Google Business Profile + Módulo 18 (SEO y Captación)</span><span><b>16 / 28</b></span></div>
 </section>
 
-<!-- ==================== 16 P3 · JUSTIFICACIÓN INTEGRAL (TÉCNICA, ECONÓMICA, ACADÉMICA, SEGURIDAD) ==================== -->
-<section class="slide" data-title="P3 · Justificación integral (§4.2–§4.7)" data-section="03 · Pregunta 3: Justificación y Desarrollo">
+<!-- ==================== 17 P3 · JUSTIFICACIÓN INTEGRAL (TÉCNICA, ECONÓMICA, ACADÉMICA, SEGURIDAD) ==================== -->
+<section class="slide" data-title="P3 · Justificación integral y beneficios" data-section="03 · Pregunta 3: Justificación y Desarrollo">
   <header class="slide-head">
     <div class="head-copy">
       <div class="kicker">Pregunta 3 <span class="sep">·</span> Sustento multidimensional del proyecto</div>
       <h2>Justificación técnica, económica, académica, social y de seguridad</h2>
     </div>
-    <div class="head-meta"><strong>§4.2 – §4.7</strong></div>
+    <div class="head-meta"><strong>Justificación</strong> integral</div>
   </header>
   <div class="body" style="gap:15px">
     <div class="exec-grid c4" style="flex:0.95">
@@ -1644,7 +1678,7 @@
       <div class="exec-card tint ok" style="padding:16px 20px;gap:10px">
         <div class="diag-head">
           <div class="ico ok"><svg viewBox="0 0 24 24"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg></div>
-          <h3>4.6 · Beneficios verificables</h3>
+          <h3>Beneficios verificables</h3>
         </div>
         <ul class="exec-list ok" style="gap:8px">
           <li style="padding:9px 12px;font-size:14.6px"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg><span>Trazabilidad integral de cliente, tesis, entregas, observaciones y pagos.</span></li>
@@ -1655,7 +1689,7 @@
       <div class="exec-card" style="padding:16px 20px;gap:10px">
         <div class="diag-head">
           <div class="ico"><svg viewBox="0 0 24 24"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div>
-          <h3>4.7 · Criterios de aceptación ante CEA GROUP</h3>
+          <h3>Criterios de aceptación ante CEA GROUP</h3>
         </div>
         <ul class="exec-list" style="gap:8px">
           <li style="padding:9px 12px;font-size:14.6px"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg><span><strong>Funciona en vivo</strong> con datos reales y elimina agendas, ficheros y WhatsApp manual.</span></li>
@@ -1665,10 +1699,82 @@
       </div>
     </div>
   </div>
-  <div class="foot"><span>Pregunta 3 · Actividad Académica §4.2 a §4.7</span><span><b>16 / 28</b></span></div>
+  <div class="foot"><span>Pregunta 3 · Justificación técnica, económica, académica y seguridad</span><span><b>17 / 28</b></span></div>
 </section>
 
-<!-- ==================== 17 P3 · AGENTES DE IA (OPENCODE + ANTIGRAVITY) Y AGENTS.MD ==================== -->
+<!-- ==================== 18 P3 · METODOLOGÍA DE DESARROLLO ÁGIL (SCRUM Y REUNIONES DIARIAS) ==================== -->
+<section class="slide" data-title="P3 · Metodología de desarrollo: Scrum" data-section="03 · Pregunta 3: Justificación y Desarrollo">
+  <header class="slide-head">
+    <div class="head-copy">
+      <div class="kicker">Pregunta 3 <span class="sep">·</span> Metodología de desarrollo ágil</div>
+      <h2>Metodología Scrum: sprints iterativos y reuniones diarias con objetivo</h2>
+      <p class="sub" style="font-size:15px">Organizamos el desarrollo en ciclos cortos con entregables funcionales, sincronización diaria del equipo y validación temprana.</p>
+    </div>
+    <div class="head-meta"><strong>Scrum</strong> · Ciclos cortos</div>
+  </header>
+  <div class="body" style="gap:14px">
+    <div class="timeline timeline-4" style="flex:0 0 auto">
+      <div class="step" style="padding:13px 14px">
+        <div class="step-num">01</div>
+        <div class="ico"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></div>
+        <div class="t" style="font-size:14.5px">Planificación de Sprint</div>
+        <div class="d" style="font-size:12.6px">Priorizamos módulos del backlog y fijamos una meta concreta por ciclo.</div>
+      </div>
+      <div class="step" style="padding:13px 14px;border-color:var(--blue-mid);background:var(--blue-soft)">
+        <div class="step-num" style="background:var(--blue);color:#fff">02</div>
+        <div class="ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+        <div class="t" style="font-size:14.5px;color:var(--blue)">Daily Scrum (Diaria)</div>
+        <div class="d" style="font-size:12.6px;color:var(--ink-soft)">Reunión diaria breve (15 min) con un objetivo claro del día y bloqueos.</div>
+      </div>
+      <div class="step" style="padding:13px 14px">
+        <div class="step-num">03</div>
+        <div class="ico ok"><svg viewBox="0 0 24 24"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg></div>
+        <div class="t" style="font-size:14.5px">Revisión con CEA GROUP</div>
+        <div class="d" style="font-size:12.6px">Demostración de avances reales para validar reglas de negocio a tiempo.</div>
+      </div>
+      <div class="step" style="padding:13px 14px">
+        <div class="step-num">04</div>
+        <div class="ico gold"><svg viewBox="0 0 24 24"><polyline points="23 4 23 10 17 10"/><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/></svg></div>
+        <div class="t" style="font-size:14.5px">Retrospectiva y mejora</div>
+        <div class="d" style="font-size:12.6px">Ajustamos tiempos, tareas y calidad antes de iniciar el siguiente sprint.</div>
+      </div>
+    </div>
+
+    <div class="exec-grid c3">
+      <div class="exec-card tint" style="padding:15px 18px;gap:8px">
+        <div class="mono" style="font-size:12px;font-weight:700;color:var(--blue-mid)">DAILY SCRUM · ENFOQUE DIARIO</div>
+        <h3 style="font-size:17.5px">Reuniones diarias con un objetivo</h3>
+        <p style="font-size:14.4px">Cada jornada iniciaba revisando qué se completó ayer, definiendo un <strong>objetivo concreto del día</strong> y destrabando bloqueos técnicos o funcionales al instante.</p>
+      </div>
+      <div class="exec-card ok" style="padding:15px 18px;gap:8px">
+        <div class="mono" style="font-size:12px;font-weight:700;color:var(--ok)">ENTREGAS INCREMENTALES</div>
+        <h3 style="font-size:17.5px">Avance funcional por módulo</h3>
+        <p style="font-size:14.4px">En lugar de esperar al final, cada sprint cerró incrementos operativos verificables: CRM, expedientes, portal PWA, cobranza y sitio web SEO.</p>
+      </div>
+      <div class="exec-card gold" style="padding:15px 18px;gap:8px">
+        <div class="mono" style="font-size:12px;font-weight:700;color:var(--gold)">SINCRONIZACIÓN DEL EQUIPO</div>
+        <h3 style="font-size:17.5px">Cero retrabajo y alta visibilidad</h3>
+        <p style="font-size:14.4px">Reparto claro de responsabilidades entre frontend, backend y validación, manteniendo alineación directa con el cronograma y las áreas de CEA GROUP.</p>
+      </div>
+    </div>
+
+    <div class="card ok-tint" style="padding:14px 22px;flex:0 0 auto">
+      <div style="display:grid;grid-template-columns:270px 1fr;gap:20px;align-items:center">
+        <div style="display:flex;align-items:center;gap:12px">
+          <div class="ico ok" style="width:42px;height:42px;flex:0 0 42px"><svg viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="M22 4 12 14.01l-3-3"/></svg></div>
+          <div>
+            <div style="font-family:var(--font-display);font-size:16px;font-weight:800;color:var(--ok)">Scrum + Ingeniería con IA</div>
+            <div style="font-size:12.8px;color:#12563e;font-weight:500">Disciplina ágil y control diario</div>
+          </div>
+        </div>
+        <p style="font-size:14.5px;color:var(--ink-soft);line-height:1.42">Las <strong>reuniones diarias orientadas a un objetivo</strong> combinadas con sprints Scrum nos permitieron entregar los <strong>13 módulos académicos</strong> y los 4 entornos en producción dentro del plazo de prácticas.</p>
+      </div>
+    </div>
+  </div>
+  <div class="foot"><span>Pregunta 3 · Metodología de desarrollo ágil Scrum aplicada al proyecto</span><span><b>18 / 28</b></span></div>
+</section>
+
+<!-- ==================== 19 P3 · AGENTES DE IA (OPENCODE + ANTIGRAVITY) Y AGENTS.MD ==================== -->
 <section class="slide" data-title="P3 · OpenCode, Antigravity y AGENTS.md" data-section="03 · Pregunta 3: Justificación y Desarrollo">
   <header class="slide-head">
     <div class="head-copy">
@@ -1737,18 +1843,18 @@
       </div>
     </div>
   </div>
-  <div class="foot"><span>Pregunta 3 · Estándar AGENTS.md aplicado con OpenCode y Antigravity</span><span><b>17 / 28</b></span></div>
+  <div class="foot"><span>Pregunta 3 · Estándar AGENTS.md aplicado con OpenCode y Antigravity</span><span><b>19 / 28</b></span></div>
 </section>
 
-<!-- ==================== 18 P3 · REQUERIMIENTOS (13 MÓDULOS ACADÉMICOS + 10 RNF) ==================== -->
-<section class="slide" data-title="P3 · Requerimientos (13 RF y 10 RNF)" data-section="03 · Pregunta 3: Justificación y Desarrollo">
+<!-- ==================== 20 P3 · REQUERIMIENTOS (13 MÓDULOS ACADÉMICOS Y CALIDAD) ==================== -->
+<section class="slide" data-title="P3 · Requerimientos y calidad" data-section="03 · Pregunta 3: Justificación y Desarrollo">
   <header class="slide-head">
     <div class="head-copy">
       <div class="kicker">Pregunta 3 <span class="sep">·</span> Especificación de Requerimientos de Software</div>
       <h2>Requerimientos funcionales por dominio y atributos de calidad</h2>
-      <p class="sub" style="font-size:14.8px">13 módulos enfocados en Asesoría Académica —conservan su numeración 01–18 del documento general por trazabilidad (§1.2)— y 10 RNF.</p>
+      <p class="sub" style="font-size:14.8px">13 módulos enfocados en Asesoría Académica —conservan su numeración 01–18 del documento general por trazabilidad— y atributos de calidad.</p>
     </div>
-    <div class="head-meta"><strong>13 Módulos</strong> · <strong>10 RNF</strong></div>
+    <div class="head-meta"><strong>13 Módulos</strong> clave</div>
   </header>
   <div class="body" style="gap:15px">
     <div class="exec-grid c4" style="flex:1.15">
@@ -1761,7 +1867,7 @@
           <li>Expedientes, tesis e hitos</li>
           <li>Versiones, observaciones y asesores</li>
         </ul>
-        <div class="mod-foot"><span>6 módulos core</span><span>RF-01..06</span></div>
+        <div class="mod-foot"><span>6 módulos core</span><span>Mód. 01–06</span></div>
       </div>
       <div class="exec-card ok" style="padding:15px 17px;gap:9px">
         <div class="mono" style="font-size:12px;color:var(--ok);font-weight:700">MÓDULOS 09 y 13</div>
@@ -1772,7 +1878,7 @@
           <li>Candado financiero ante mora</li>
           <li>Contratos académicos y adendas</li>
         </ul>
-        <div class="mod-foot"><span>2 módulos control</span><span>RF-09, 13</span></div>
+        <div class="mod-foot"><span>2 módulos control</span><span>Mód. 09 y 13</span></div>
       </div>
       <div class="exec-card gold" style="padding:15px 17px;gap:9px">
         <div class="mono" style="font-size:12px;color:var(--gold);font-weight:700">MÓDULOS 14 – 16</div>
@@ -1783,7 +1889,7 @@
           <li>Gemini: resumen chat y redacción</li>
           <li>Etiquetado inteligente de archivos</li>
         </ul>
-        <div class="mod-foot"><span>3 módulos valor</span><span>RF-14..16</span></div>
+        <div class="mod-foot"><span>3 módulos valor</span><span>Mód. 14–16</span></div>
       </div>
       <div class="exec-card" style="padding:15px 17px;gap:9px">
         <div class="mono" style="font-size:12px;color:var(--blue-mid);font-weight:700">MÓDULOS 17 – 18</div>
@@ -1794,7 +1900,7 @@
           <li>Sitio web SEO y blog institucional</li>
           <li>Reclamaciones y leads al CRM</li>
         </ul>
-        <div class="mod-foot"><span>2 módulos salida</span><span>RF-17..18</span></div>
+        <div class="mod-foot"><span>2 módulos salida</span><span>Mód. 17–18</span></div>
       </div>
     </div>
 
@@ -1802,14 +1908,14 @@
       <div class="exec-card tint" style="padding:16px 20px;gap:8px">
         <div class="diag-head">
           <div class="ico"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
-          <h3>Principio rector del negocio (§1.4)</h3>
+          <h3>Principio rector del negocio</h3>
         </div>
         <p style="font-size:15px;line-height:1.48"><span class="strong">«Un cliente = un expediente digital integral».</span> Toda la trayectoria desde el CRM hasta la sustentación converge en un único registro, con cero doble digitación.</p>
       </div>
       <div class="exec-card ok" style="padding:16px 20px;gap:8px">
         <div class="diag-head">
           <div class="ico ok"><svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div>
-          <h3>Atributos No Funcionales (RNF-01 a RNF-10)</h3>
+          <h3>Atributos No Funcionales</h3>
         </div>
         <div class="rnf-grid">
           <div class="rnf-tile"><div class="rnf-val">&lt; 1.5 s</div><div class="rnf-lbl">Respuesta UI</div></div>
@@ -1820,10 +1926,10 @@
       </div>
     </div>
   </div>
-  <div class="foot"><span>Pregunta 3 · Especificación de Requerimientos (§1.2, §5 y §6) · Módulos 07–08 y 10–12 fuera de alcance académico</span><span><b>18 / 28</b></span></div>
+  <div class="foot"><span>Pregunta 3 · Especificación de Requerimientos · Módulos 07–08 y 10–12 fuera de alcance académico</span><span><b>20 / 28</b></span></div>
 </section>
 
-<!-- ==================== 19 P3 · STACK TECNOLÓGICO Y ROLES RBAC ==================== -->
+<!-- ==================== 21 P3 · STACK TECNOLÓGICO Y ROLES RBAC ==================== -->
 <section class="slide" data-title="P3 · Stack tecnológico y RBAC" data-section="03 · Pregunta 3: Justificación y Desarrollo">
   <header class="slide-head">
     <div class="head-copy">
@@ -1836,7 +1942,7 @@
   <div class="body">
     <div class="grid" style="grid-template-columns:.93fr 1.07fr;gap:16px;flex:1;align-items:stretch;min-height:0">
       <div class="table-panel">
-        <div style="font-family:var(--font-display);font-size:16px;font-weight:800;color:var(--blue)">Stack tecnológico (§3.2)</div>
+        <div style="font-family:var(--font-display);font-size:16px;font-weight:800;color:var(--blue)">Stack tecnológico</div>
         <table>
           <thead><tr><th style="width:28%">Capa</th><th>Tecnología</th></tr></thead>
           <tbody>
@@ -1932,7 +2038,7 @@
       </div>
 
       <div class="table-panel" style="gap:8px">
-        <div style="font-family:var(--font-display);font-size:16px;font-weight:800;color:var(--ok)">Matriz RBAC — 7 perfiles aislados (§4)</div>
+        <div style="font-family:var(--font-display);font-size:16px;font-weight:800;color:var(--ok)">Matriz RBAC — 7 perfiles aislados</div>
         <table class="rbac-table">
           <thead><tr><th>Rol</th><th>Identificador</th><th>Superficie y alcance</th></tr></thead>
           <tbody>
@@ -1951,133 +2057,7 @@
       </div>
     </div>
   </div>
-  <div class="foot"><span>Pregunta 3 · Documento de Requerimientos §3 Stack y §4 RBAC</span><span><b>19 / 28</b></span></div>
-</section>
-
-<!-- ==================== 20 P3 · ESTRUCTURA DE LA BASE DE DATOS (POSTGRESQL / SUPABASE) ==================== -->
-<section class="slide" data-title="P3 · Estructura de la Base de Datos" data-section="03 · Pregunta 3: Justificación y Desarrollo">
-  <header class="slide-head">
-    <div class="head-copy">
-      <div class="kicker">Pregunta 3 <span class="sep">·</span> Arquitectura de datos relacional</div>
-      <h2>Estructura de la Base de Datos PostgreSQL (Supabase)</h2>
-      <p class="sub" style="font-size:15px">Seis dominios relacionales enlazados por clave foránea alrededor del núcleo <span class="mono accent">expedientes</span>.</p>
-    </div>
-    <div class="head-meta"><strong>PostgreSQL</strong> · 6 dominios</div>
-  </header>
-  <div class="body" style="gap:14px">
-    <div class="exec-grid c3 r2">
-      <div class="db-card">
-        <div class="db-title">1. Seguridad y RBAC <span>Mód. 01</span></div>
-        <div class="db-tables">
-          <div class="db-row"><b>usuarios</b> · email, hash, rol, oauth_google</div>
-          <div class="db-row"><b>roles_permisos</b> · matriz por endpoint</div>
-          <div class="db-row"><b>tokens_recuperacion</b> · enlaces y JWT</div>
-        </div>
-      </div>
-
-      <div class="db-card">
-        <div class="db-title">2. CRM y Web <span>Mód. 02, 18</span></div>
-        <div class="db-tables">
-          <div class="db-row"><b>prospectos</b> · universidad, carrera, etapa</div>
-          <div class="db-row"><b>seguimientos_crm</b> · notas y alerta 48h</div>
-          <div class="db-row"><b>noticias_web / reclamos</b> · blog y libro</div>
-        </div>
-      </div>
-
-      <div class="db-card ok">
-        <div class="db-title">3. Expedientes y Tesis <span>Mód. 03, 04</span></div>
-        <div class="db-tables">
-          <div class="db-row"><b>clientes / expedientes</b> · 1 cliente = 1 PK</div>
-          <div class="db-row"><b>proyectos_tesis</b> · estado, avance, máx. 1</div>
-          <div class="db-row"><b>hitos / servicios_plus</b> · capítulos y plus</div>
-        </div>
-      </div>
-
-      <div class="db-card ok">
-        <div class="db-title">4. Versiones, Chat e IA <span>Mód. 05, 16</span></div>
-        <div class="db-tables">
-          <div class="db-row"><b>versiones_entregables</b> · V1..Final + R2</div>
-          <div class="db-row"><b>observaciones / turnitin</b> · PDF y &lt; 20%</div>
-          <div class="db-row"><b>mensajes_chat / resumenes_ia</b> · Realtime + Gemini</div>
-        </div>
-      </div>
-
-      <div class="db-card gold">
-        <div class="db-title">5. Asesores y Alertas <span>Mód. 06, 15</span></div>
-        <div class="db-tables">
-          <div class="db-row"><b>asesores</b> · especialidad, grado, tope (5)</div>
-          <div class="db-row"><b>asignaciones_asesor</b> · validación grado</div>
-          <div class="db-row"><b>notificaciones_push</b> · VAPID y FCM</div>
-        </div>
-      </div>
-
-      <div class="db-card gold">
-        <div class="db-title">6. Contratos y Pagos <span>Mód. 09, 13, 17</span></div>
-        <div class="db-tables">
-          <div class="db-row"><b>contratos / adendas</b> · tipo, vigencia y PDF</div>
-          <div class="db-row"><b>cuotas_pagos / vouchers</b> · mora y candado</div>
-          <div class="db-row"><b>auditoria_sistema</b> · bitácora inmutable</div>
-        </div>
-      </div>
-    </div>
-
-    <div class="card tint" style="padding:10px 16px;flex-direction:row;align-items:center;justify-content:space-between;gap:16px;flex:0 0 auto">
-      <p style="font-size:13.8px;color:var(--ink-soft);line-height:1.38"><strong>Arquitectura híbrida:</strong> metadatos y chat en vivo en <strong>PostgreSQL + Supabase Realtime</strong> (backups diarios); archivos pesados (.docx, .pdf, audios y vouchers) en <strong>Cloudflare R2</strong> con URLs firmadas.</p>
-      <span class="mono" style="font-size:12px;font-weight:700;color:var(--blue);white-space:nowrap">PK expediente_id</span>
-    </div>
-  </div>
-  <div class="foot"><span>Pregunta 3 · Estructura lógica de la Base de Datos PostgreSQL (Supabase)</span><span><b>20 / 28</b></span></div>
-</section>
-
-<!-- ==================== 21 P3 · DOCUMENTACIÓN DEL BACKEND (FASTAPI / SWAGGER) ==================== -->
-<section class="slide" data-title="P3 · Backend API y Swagger (/docs)" data-section="03 · Pregunta 3: Justificación y Desarrollo">
-  <header class="slide-head">
-    <div class="head-copy">
-      <div class="kicker">Pregunta 3 <span class="sep">·</span> Núcleo de servicios REST en producción</div>
-      <h2>Backend unificado (FastAPI) y documentación interactiva Swagger</h2>
-      <p class="sub" style="font-size:15.2px">Un único backend en Google Cloud Run atiende al BackOffice, Portal PWA, Sitio Web y App de Ventas con contratos OpenAPI validados.</p>
-    </div>
-    <div class="head-meta"><strong>Cloud Run</strong> · OpenAPI 3</div>
-  </header>
-  <div class="body" style="gap:16px">
-    <div class="exec-grid c3" style="flex:1.05">
-      <div class="exec-card">
-        <div class="mono" style="font-size:12.5px;color:var(--blue-mid);font-weight:700">/auth · /usuarios · /crm</div>
-        <h3>Acceso y embudo comercial</h3>
-        <p>Emisión de JWT, login con Google OAuth2, verificación RBAC por dependencia FastAPI, captura de leads web y pipeline Kanban.</p>
-      </div>
-      <div class="exec-card ok">
-        <div class="mono" style="font-size:12.5px;color:var(--ok);font-weight:700">/expedientes · /tesis · /versiones</div>
-        <h3>Motor académico y archivos</h3>
-        <p>Creación automática de expediente al ganar venta, validación de carga/grado de asesores, versionado inmutable y firmas Cloudflare R2.</p>
-      </div>
-      <div class="exec-card gold">
-        <div class="mono" style="font-size:12.5px;color:var(--gold);font-weight:700">/pagos · /ia · /notificaciones</div>
-        <h3>Cobranza, IA Gemini y alertas</h3>
-        <p>Cálculo de saldos, evaluación del candado financiero, resúmenes de chat y visión de boletas con Gemini, más Web Push / FCM.</p>
-      </div>
-    </div>
-
-    <div class="exec-card tint" style="padding:22px 26px;flex:0.95;justify-content:space-between;gap:16px">
-      <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:22px">
-        <div>
-          <div style="font-family:var(--font-display);font-size:13px;font-weight:800;color:var(--blue-mid);letter-spacing:.06em;margin-bottom:6px">DOCUMENTACIÓN VIVA DEL BACKEND (SWAGGER UI)</div>
-          <h3 style="font-size:21px;margin-bottom:8px">Inspección y prueba de endpoints en tiempo real</h3>
-          <p style="max-width:780px;font-size:15.4px;line-height:1.48">Construido con <strong>FastAPI + Pydantic</strong>, autogenera documentación OpenAPI interactiva en producción para auditar rutas, esquemas JSON, códigos HTTP y probar endpoints con token Bearer.</p>
-        </div>
-        <a class="btn-link" href="https://cea-crm-backend-914895036295.southamerica-east1.run.app/docs" target="_blank" rel="noopener noreferrer">
-          Abrir Swagger /docs
-          <svg viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-        </a>
-      </div>
-
-      <a class="link-url" href="https://cea-crm-backend-914895036295.southamerica-east1.run.app/docs" target="_blank" rel="noopener noreferrer">
-        <span>https://cea-crm-backend-914895036295.<wbr>southamerica-east1.run.app/docs</span>
-        <svg viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-      </a>
-    </div>
-  </div>
-  <div class="foot"><span>Pregunta 3 · Backend FastAPI en Google Cloud Run (southamerica-east1)</span><span><b>21 / 28</b></span></div>
+  <div class="foot"><span>Pregunta 3 · Stack tecnológico y matriz de roles RBAC</span><span><b>21 / 28</b></span></div>
 </section>
 
 <!-- ==================== 22 DIAGRAMA 00: SISTEMA COMPLETO ==================== -->
@@ -2093,10 +2073,6 @@
     <div class="media-layout">
       <div class="diagram-frame">
         <iframe data-src="diagramas/00-sistema-completo.html?embed=1&amp;theme=light" title="Diagrama interactivo del sistema completo CEA GROUP"></iframe>
-      </div>
-      <div class="media-strip">
-        <p>Diagrama HTML interactivo que integra el BackOffice, Portal del Cliente, Sitio Web y App de Ventas sobre la API FastAPI y la base de datos PostgreSQL central.</p>
-        <span class="media-meta">DIAGRAMAS_CEA · 00</span>
       </div>
     </div>
   </div>
@@ -2117,10 +2093,6 @@
       <div class="diagram-frame">
         <iframe data-src="diagramas/01-backoffice.html?embed=1&amp;theme=light" title="Diagrama interactivo de módulos y servicios del BackOffice"></iframe>
       </div>
-      <div class="media-strip">
-        <p>Arquitectura de los módulos internos para los 5 roles de CEA GROUP: CRM comercial, gestión académica, cobranza y vouchers, contratos, contenido web e IA de apoyo.</p>
-        <span class="media-meta">admin.grupoceaperu.com</span>
-      </div>
     </div>
   </div>
   <div class="foot"><span>Diagrama HTML interactivo incrustado (tema claro)</span><span><b>23 / 28</b></span></div>
@@ -2139,10 +2111,6 @@
     <div class="media-layout">
       <div class="diagram-frame">
         <iframe data-src="diagramas/02-portal-cliente.html?embed=1&amp;theme=light" title="Diagrama interactivo del Portal del Cliente y Asesor"></iframe>
-      </div>
-      <div class="media-strip">
-        <p>Vistas aisladas para tesista y asesor: expediente con semáforo, chat en tiempo real (Supabase Realtime), resumen IA del historial, baúl de versiones y pagos con candado financiero.</p>
-        <span class="media-meta">portal.grupoceaperu.com</span>
       </div>
     </div>
   </div>
@@ -2163,10 +2131,6 @@
       <div class="diagram-frame">
         <iframe data-src="diagramas/03-sitio-web.html?embed=1&amp;theme=light" title="Diagrama interactivo del sitio web institucional"></iframe>
       </div>
-      <div class="media-strip">
-        <p>Estructura de rutas públicas, blog gestionado desde el BackOffice, libro de reclamaciones, SEO técnico (sitemap/Schema) y registro automático de leads al CRM.</p>
-        <span class="media-meta">grupoceaperu.com</span>
-      </div>
     </div>
   </div>
   <div class="foot"><span>Diagrama HTML interactivo incrustado (tema claro)</span><span><b>25 / 28</b></span></div>
@@ -2186,10 +2150,6 @@
       <div class="diagram-frame">
         <iframe data-src="diagramas/04-app-ventas.html?embed=1&amp;theme=light" title="Diagrama interactivo de la App de Ventas"></iframe>
       </div>
-      <div class="media-strip">
-        <p>Extensión móvil Android para ejecutivos comerciales: captura de prospectos en campo, seguimiento directo conectado al CRM central y alertas instantáneas con Firebase FCM.</p>
-        <span class="media-meta">DIAGRAMAS_CEA · 04</span>
-      </div>
     </div>
   </div>
   <div class="foot"><span>Diagrama HTML interactivo incrustado (tema claro)</span><span><b>26 / 28</b></span></div>
@@ -2201,106 +2161,86 @@
     <div class="head-copy">
       <div class="kicker">Pregunta 3 · Demostración en vivo <span class="sep">·</span> Sistemas desplegados</div>
       <h2>Accesos directos al ecosistema en producción</h2>
-      <p class="sub" style="font-size:15px">Demo en tiempo real de los cuatro entornos operativos —cada tarjeta incluye respaldo visual Plan B por si falla la red del aula.</p>
+      <p class="sub" style="font-size:15px">Demostración en tiempo real de las tres plataformas web desplegadas y operativas para CEA GROUP.</p>
     </div>
-    <div class="head-meta"><strong>4 entornos</strong> activos</div>
+    <div class="head-meta"><strong>3 entornos</strong> en vivo</div>
   </header>
   <div class="body">
-    <div class="exec-grid c2 r2">
-      <div class="link-card">
-        <div>
-          <div class="card-head" style="margin-bottom:9px">
-            <div class="ico" style="width:40px;height:40px"><svg viewBox="0 0 24 24" style="width:20px;height:20px"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div>
+    <div class="exec-grid c3" style="gap:18px">
+      <div class="link-card" style="padding:24px 24px 22px;gap:16px">
+        <div style="display:flex;flex-direction:column;gap:14px">
+          <div class="card-head" style="margin-bottom:2px">
+            <div class="ico" style="width:44px;height:44px"><svg viewBox="0 0 24 24" style="width:22px;height:22px"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div>
             <div>
               <div class="mono" style="font-size:11.8px;color:var(--blue-mid);font-weight:700">01 · BACKOFFICE ADMINISTRATIVO</div>
-              <h3 style="font-size:18.8px;margin-top:2px;font-weight:800">Panel interno de gestión (5 roles)</h3>
+              <h3 style="font-size:19.5px;margin-top:3px;font-weight:800">Panel interno de gestión</h3>
             </div>
           </div>
-          <p>CRM Kanban, alta automática de expedientes, asignación controlada de asesores, validación de vouchers con IA, contratos y KPIs.</p>
+          <p style="font-size:15px;line-height:1.5">CRM Kanban, alta automática de expedientes, asignación controlada de asesores, validación de vouchers con Gemini, contratos y KPIs gerenciales.</p>
+          <ul class="mod-list" style="margin-top:2px">
+            <li>5 roles administrativos con permisos RBAC</li>
+            <li>Control de cobranza y candado ante mora</li>
+            <li>Auditoría, reportes XLSX/PDF y contenido web</li>
+          </ul>
         </div>
         <div class="link-actions">
           <a class="link-url" href="https://admin.grupoceaperu.com/" target="_blank" rel="noopener noreferrer">
             <span>https://admin.grupoceaperu.com/</span>
             <svg viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
           </a>
-          <button type="button" class="backup-btn" data-lightbox="assets/backoffice.png" data-caption="Respaldo Plan B · BackOffice administrativo CEA GROUP (admin.grupoceaperu.com)" aria-label="Ver captura Plan B de BackOffice">
-            <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
-            Plan B
-          </button>
         </div>
       </div>
 
-      <div class="link-card ok-top">
-        <div>
-          <div class="card-head" style="margin-bottom:9px">
-            <div class="ico ok" style="width:40px;height:40px"><svg viewBox="0 0 24 24" style="width:20px;height:20px"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+      <div class="link-card ok-top" style="padding:24px 24px 22px;gap:16px">
+        <div style="display:flex;flex-direction:column;gap:14px">
+          <div class="card-head" style="margin-bottom:2px">
+            <div class="ico ok" style="width:44px;height:44px"><svg viewBox="0 0 24 24" style="width:22px;height:22px"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
             <div>
-              <div class="mono" style="font-size:11.8px;color:var(--ok);font-weight:700">02 · PORTAL DEL CLIENTE Y ASESOR (PWA)</div>
-              <h3 style="font-size:18.8px;margin-top:2px;font-weight:800">Mi Expediente, Chat IA y Pagos</h3>
+              <div class="mono" style="font-size:11.8px;color:var(--ok);font-weight:700">02 · PORTAL DEL CLIENTE Y ASESOR</div>
+              <h3 style="font-size:19.5px;margin-top:3px;font-weight:800">Mi Expediente y Chat IA</h3>
             </div>
           </div>
-          <p>App instalable para tesistas y asesores: semáforo de avance, mensajería Realtime, resumen con Gemini, baúl de versiones y pagos.</p>
+          <p style="font-size:15px;line-height:1.5">Aplicación PWA instalable para tesistas y asesores con seguimiento transparente de tesis, mensajería en vivo y control de entregables.</p>
+          <ul class="mod-list" style="margin-top:2px">
+            <li>Semáforo de avance e historial inmutable</li>
+            <li>Chat en tiempo real + resúmenes con Gemini</li>
+            <li>Cronograma de cuotas, saldos y vouchers</li>
+          </ul>
         </div>
         <div class="link-actions">
           <a class="link-url" href="https://portal.grupoceaperu.com/" target="_blank" rel="noopener noreferrer">
             <span>https://portal.grupoceaperu.com/</span>
             <svg viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
           </a>
-          <button type="button" class="backup-btn" data-lightbox="assets/portal.png" data-caption="Respaldo Plan B · Portal del Cliente y Asesor PWA (portal.grupoceaperu.com)" aria-label="Ver captura Plan B del Portal">
-            <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
-            Plan B
-          </button>
         </div>
       </div>
 
-      <div class="link-card gold-top">
-        <div>
-          <div class="card-head" style="margin-bottom:9px">
-            <div class="ico gold" style="width:40px;height:40px"><svg viewBox="0 0 24 24" style="width:20px;height:20px"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div>
+      <div class="link-card gold-top" style="padding:24px 24px 22px;gap:16px">
+        <div style="display:flex;flex-direction:column;gap:14px">
+          <div class="card-head" style="margin-bottom:2px">
+            <div class="ico gold" style="width:44px;height:44px"><svg viewBox="0 0 24 24" style="width:22px;height:22px"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div>
             <div>
               <div class="mono" style="font-size:11.8px;color:var(--gold);font-weight:700">03 · SITIO WEB INSTITUCIONAL (SEO)</div>
-              <h3 style="font-size:18.8px;margin-top:2px;font-weight:800">Captación digital y visibilidad en Google</h3>
+              <h3 style="font-size:19.5px;margin-top:3px;font-weight:800">Captación digital y SEO</h3>
             </div>
           </div>
-          <p>Páginas públicas de la consultora, landing de Asesoría de Tesis, blog de noticias, libro de reclamaciones y leads directos al CRM.</p>
+          <p style="font-size:15px;line-height:1.5">Presencia oficial de CEA GROUP optimizada para posicionamiento orgánico en Google Search y conexión directa con el embudo comercial.</p>
+          <ul class="mod-list" style="margin-top:2px">
+            <li>Landing de Asesoría de Tesis y 7 secciones</li>
+            <li>Blog institucional administrable y libro virtual</li>
+            <li>Formularios conectados al CRM en vivo</li>
+          </ul>
         </div>
         <div class="link-actions">
           <a class="link-url" href="https://grupoceaperu.com/" target="_blank" rel="noopener noreferrer">
             <span>https://grupoceaperu.com/</span>
             <svg viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
           </a>
-          <button type="button" class="backup-btn" data-lightbox="assets/sitio-web.png" data-caption="Respaldo Plan B · Sitio web institucional SEO (grupoceaperu.com)" aria-label="Ver captura Plan B del Sitio Web">
-            <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
-            Plan B
-          </button>
-        </div>
-      </div>
-
-      <div class="link-card">
-        <div>
-          <div class="card-head" style="margin-bottom:9px">
-            <div class="ico" style="width:40px;height:40px"><svg viewBox="0 0 24 24" style="width:20px;height:20px"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></div>
-            <div>
-              <div class="mono" style="font-size:11.8px;color:var(--blue-mid);font-weight:700">04 · BACKEND API · FASTAPI SWAGGER</div>
-              <h3 style="font-size:18.8px;margin-top:2px;font-weight:800">Documentación técnica interactiva (/docs)</h3>
-            </div>
-          </div>
-          <p>API central en Google Cloud Run: especificación OpenAPI en vivo con todos los endpoints REST, modelos Pydantic y pruebas con JWT.</p>
-        </div>
-        <div class="link-actions">
-          <a class="link-url" href="https://cea-crm-backend-914895036295.southamerica-east1.run.app/docs" target="_blank" rel="noopener noreferrer">
-            <span>https://cea-crm-backend-914895036295.<wbr>southamerica-east1.run.app/docs</span>
-            <svg viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-          </a>
-          <button type="button" class="backup-btn" data-go-slide="20" aria-label="Volver al resumen de arquitectura API">
-            <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg>
-            Resumen
-          </button>
         </div>
       </div>
     </div>
   </div>
-  <div class="foot"><span>Pregunta 3 · Enlaces en vivo + respaldo Plan B para exposición presencial</span><span><b>27 / 28</b></span></div>
+  <div class="foot"><span>Pregunta 3 · Enlaces directos a las plataformas en producción</span><span><b>27 / 28</b></span></div>
 </section>
 
 <!-- ==================== 28 EJECUCIÓN, VERIFICACIÓN Y CIERRE ==================== -->
@@ -2340,7 +2280,7 @@
       <div class="exec-card ok">
         <div class="diag-head">
           <div class="ico ok"><svg viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></svg></div>
-          <h3>Escenarios clave verificados en vivo (§7.1)</h3>
+          <h3>Escenarios clave verificados en vivo</h3>
         </div>
         <ul class="exec-list ok">
           <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg><span>Prospecto «Ganado» → crea expediente, cliente y proyecto automáticamente.</span></li>
@@ -2359,7 +2299,7 @@
         </div>
 
         <div class="impact-strip" aria-label="Resumen cuantitativo del sistema">
-          <div class="impact-box"><strong>13</strong><span>Módulos RF</span></div>
+          <div class="impact-box"><strong>13</strong><span>Módulos clave</span></div>
           <div class="impact-box"><strong>7</strong><span>Roles RBAC</span></div>
           <div class="impact-box"><strong>4</strong><span>Entornos en vivo</span></div>
         </div>
@@ -2538,7 +2478,7 @@
   panel.addEventListener('click', e => { if (e.target === panel) closeIndex(); });
   lightbox.addEventListener('click', e => { if (e.target === lightbox) closeLightbox(); });
 
-  // Jump buttons (e.g. Slide 27 -> API architecture summary)
+  // Jump buttons between slides
   deck.querySelectorAll('[data-go-slide]').forEach(btn => {
     btn.addEventListener('click', () => {
       const idx = parseInt(btn.dataset.goSlide, 10);
@@ -2546,7 +2486,7 @@
     });
   });
 
-  // Lightbox for full-size visual inspection and Plan B offline captures
+  // Lightbox for full-size visual inspection
   deck.querySelectorAll('[data-lightbox]').forEach(el => {
     const isNativeBtn = el.tagName === 'BUTTON';
     if (!isNativeBtn) {
